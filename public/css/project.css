@@ -1,0 +1,87 @@
+.project_back{
+    width:100%;
+    position:relative;
+    background-color: #AE888D;
+    animation: fadein 2s;
+}
+.plzleft{
+    text-align: left;
+}
+.project_wrap{
+    font-size:90px;
+    color:#000;
+    display:inline-block;
+    position:relative;
+
+}
+.ppoaster_wrap{
+    width:100%;
+    padding:100px 0 0 50px;
+    box-sizing: border-box;
+    text-align: left;
+}
+.pro_poaster2{
+    padding-left:200px;
+    box-sizing: border-box;
+}
+.circle{
+    position: absolute;
+    bottom: -30%;
+    right: -30%;
+    width: 40%;
+    height: auto;
+    animation: rotate_image 10s linear infinite;
+    transform-origin: 50% 50%;
+
+
+}
+.circle>div{
+    width:100%;
+    background-image:url(../img/hello.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    padding-top:100%;
+}
+
+ 
+@keyframes rotate_image{
+	100% {
+    	transform: rotate(360deg);
+    }
+}
+
+
+@media only screen and (max-width: 1200px) {
+
+.project_wrap{
+    font-size:7vw;
+}
+
+.pro_poaster2{
+    padding-left:30px;
+    box-sizing: border-box;
+}
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .ppoaster_wrap {
+        padding: 0;
+        font-size:9vw;
+    }
+    .project_wrap{
+        font-size:10vw;
+        height: 90%;
+        display: flex;
+        align-items: center;
+        padding-left:5%;
+        box-sizing: border-box;
+    }
+    .circle{
+        width:30%;
+        bottom: 170px;
+    right: 0;
+    }
+    
+}

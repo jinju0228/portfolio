@@ -1,0 +1,287 @@
+.webclone_back{
+    width:100%;
+    background-color: #F7EA49;
+    position:relative;
+    animation: fadein 2s;
+
+  }
+  .b_circle{
+    position:absolute;
+    right:0;
+    top:55vh;
+    width:35%;
+  }
+  .b_circle>div{
+    width:100%;
+    padding-top:100%;
+    background-color: #0F4CE9;
+    border-radius: 50%;
+    background-size: 100% auto;
+  }
+  .whale{
+    position:absolute;
+    right:15%;
+    top:55vh;
+    width:40%;
+  }
+  .whale>div{
+    width:100%;
+    padding-top:57.605%;
+    background-image: url(../img/whale.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% auto;
+  }
+.wpoaster_wrap{
+  padding-top:150px;
+  padding-left:100px;
+  box-sizing: border-box;
+  text-align: left;
+  color:#000;
+}
+.web_poaster2{
+  padding-left:100px;
+}
+
+
+
+
+  
+ .webclone_poaster{
+  width:100%;
+  height:100%;
+ }
+.wpoaster_wrap>h2{
+  line-height:2;
+}
+ .poaster_wrap{
+  text-align: left;
+ }
+
+
+ /*****************************/
+ .web_art1{
+  padding-top:100px;
+  text-align: left;
+ }
+ .clone_title{
+  padding:40px 0;
+  line-height:1.4;
+  color:#000;
+  margin-bottom:50px;
+ }
+ .clone_title>h4>span{
+  font-size:20px;
+  line-height:50px;
+  margin-left:20px;
+ }
+ .one_wrap{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+  padding-bottom:250px;
+  color:#000;
+ }
+ .one{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+  
+  
+ }
+ .one_img, .one_txt{
+  width:calc(50% - 15px);
+ }
+ .one_img{
+  display:flex;
+ }
+ .one_img>div{
+  display:flex;
+  align-items: center;
+ }
+ .one_img>div>img{
+  width:100%;
+  height:auto;
+ }
+ .one_txt{
+  padding: 15px;
+  box-sizing: border-box;
+ }
+ .subBox{
+  margin-bottom:30px;
+  display:flex;
+  flex-wrap:wrap;
+  
+ }
+ .subBox>span{
+  width:50%;
+  line-height:2;
+ }
+.one_wrap h5{
+  width:100%;
+  font-weight:bold;
+  line-height:2;
+}
+.one_bottom{
+  width:100%;
+  padding:65px 15px 0;
+  box-sizing: border-box;
+  display:flex;
+  justify-content: space-between;
+}
+.one_bottom>div{
+  width:calc(50% - 15px);
+}
+.one_info{
+
+  padding:20px 20px 20px 20px;
+  box-sizing: border-box;
+  background-color: rgba(255,255,255,0.8);
+}
+.one_info>div{
+  width:100%;
+  display:flex;
+  flex-wrap:wrap;
+}
+.one_info>div>div{
+  width:130px;
+  margin-right:20px;
+}
+.one_info>div>a{
+  width:calc(100% - 150px);
+  display:flex;
+  z-index:2000;
+}
+.heroku_wrap{
+  margin-bottom:20px;
+}
+.heroku{
+  width:auto;
+  height:30px;
+  
+}
+.github{
+  width:auto;
+  height:40px;
+}
+
+
+
+.one_overview{
+  padding:15px;
+  box-sizing: border-box;
+}
+.mobile_oneInfo{
+  display:none;
+}
+.web_line i{
+    position:absolute;
+    top:-2px;
+    left:150px;
+    line-height:50px;
+    font-size:20px;
+    color:#000;
+}
+
+@media only screen and (max-width: 1400px) {
+  .one_info>div>div{
+    width:100%;
+  }
+  .one_info>div>a{
+    display:inline-block;
+    width:100%;
+    display:flex;
+    overflow:hidden;
+    text-overflow: ellipsis;
+    
+  }
+  .one_bottom{
+    padding:20px 15px 0;
+  }
+  .wpoaster_wrap{
+    padding-left:20px;
+  }
+  .wpoaster_wrap>h2{
+    font-size:5vw;
+  }
+  .web_poaster2 {
+    padding-left: 40px;
+}
+}
+
+
+@media only screen and (max-width: 1000px) {
+  .wpoaster_wrap {
+    padding-top: 0;
+    padding-left: 0;
+  }
+  .webclone_wrap{
+    height: 95vh;
+    display: flex;
+    align-items: center;
+
+  }
+  .web_poaster2 {
+    padding-left: 50px;
+}
+
+
+  .web_art1 {
+    padding-top: 50px;
+}
+.one_wrap{
+  padding-bottom:100px;
+}
+  .one_img, .one_txt{
+    width:100%;
+  }
+ .one_img{
+  display:flex;
+  justify-content: center;
+  }
+  .one_ime>div{
+    width:70%;
+  }
+  .one_img>div>img{
+    width:100%;
+  }
+  .one_txt {
+    padding: 30px 40px 0;
+    box-sizing: border-box;
+}
+.one_bottom{
+  padding: 0 25px 0;
+
+}
+  .one_info{
+    display:none;
+  }
+  .one_bottom>div{
+    width:100%;
+  }
+  .mobile_oneInfo{
+    
+    display:block;
+      padding:20px 0;
+      box-sizing: border-box;
+      background-color: rgba(255,255,255,0.5);
+      width:100%;
+      display:flex;
+      justify-content: space-around;
+      margin:20px;
+      z-index:2000;
+      
+  
+  }
+  .mobile_oneInfo>a{
+    display:inline-block;
+    height:40px;
+  }
+  .mobile_oneInfo>a>img{
+    height:100%;
+    width:auto;
+  }
+  .wpoaster_wrap>h2{
+    font-size:8vw;
+  }
+}

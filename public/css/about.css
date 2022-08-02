@@ -1,0 +1,356 @@
+
+  .about_back{
+    width:100%;
+    background-color: #E3E3D1;
+    position:relative;
+    animation: fadein 2s;
+  }
+
+    .yellow{
+        position:absolute;
+        display:flex;
+        z-index:1;
+      }
+    .yellow1{
+      width: 274px;
+      left: 23%;
+      top: 0;
+    }
+    .yellow>div{
+      width:100%;
+      background-color: #F7EA49;
+    }
+    .yellow1>div{
+      padding-top:114.23%;
+    }
+    .yellow2{
+      width: 200px;
+      height: 308px;
+      left: 10%;
+      top: 384px;
+    }
+    .yellow2>div{
+      padding-top:194%;
+    }
+    .yellow3{
+     width: 808px;
+     height: 212px;
+     right: -10%;
+     top: 593px;
+    }
+    .yellow3>div{
+      padding-top:26.5%;
+    }
+    .yellow4{
+      width: 110px;
+      height: 110px;
+      left: 55%;
+      top: 384px;
+    }
+    .yellow4>div{
+      padding-top:100%;
+    }
+    .about_poaster{
+      width: 1250px;
+      height:100vh;
+      padding:0 0 0 50px;
+      box-sizing: border-box;
+    }
+    .apoaster_wrap{
+        width: 100%;
+        height: 100%;
+    }
+    .poaster1{  
+        top:220px;
+        right:210px;
+    }
+    .poaster2{
+      top: 500px;
+      left: 250px;
+    }
+   
+    .about_poaster h4{
+      position:absolute;
+      font-size:55px;
+      font-weight:400;
+      display:flex;
+      z-index:500;
+    }
+    .black_line{
+      width:600px;
+      border-top:2px solid #000;
+      position:relative;
+      height:50px;
+    }
+    .black_line>span{
+      display:inline-block;
+      padding:10px 15px;
+      background-color:#000;
+      color:#fff;
+      font-size:20px;
+      font-weight:500;
+      position:absolute;
+      top:-2px;
+      left:0
+    }
+    .black_line>i{
+      position:absolute;
+      top:-2px;
+      left:170px;
+      line-height:50px;
+      font-size:20px;
+      color:#000;
+    }
+    .front{
+      margin:150px 0 200px;
+      display:flex;
+      justify-content: space-between;
+    }
+    .front>div{
+      width:calc(50% - 30px);
+      height:350px;
+    }
+    .my_img{
+      width:100%;
+      height:100%;
+      background-color:#fff;
+    }
+    .my_info{
+      justify-content: space-between;
+      flex-direction: column;
+      height:100%;
+      padding:30px 0 0;
+      box-sizing:border-box; 
+      display: flex;
+      font-size:20px;
+    }
+    .name{
+      font-size:26px;
+    }
+    .edu,.tool_wrap{
+      margin:100px 0 70px;
+    }
+    .cer,.skill_wrap{
+        margin:0 0 70px;
+    }
+    .sub_title{
+      font-size:26px;
+      display:inline-block;
+      display:flex;
+      align-items:center
+    }
+    .sub_title>span{
+      display:inline-block;
+      width:7px;
+      height:7px;
+      border-radius: 50%;
+      background-color:#000;
+      margin-right:10px;
+    }
+    table{
+      width:90%;
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+    td{
+      height:50px;
+      padding: 20px 5px;
+      box-sizing: border-box;
+    }
+    .edu_table td:first-child{
+      width:200px;
+    }
+    .edu_table td:nth-child(2){
+      width: calc(100% - 384px);
+      text-align: left;
+
+    }
+    .art3{
+      margin:70px auto 0;
+      padding-bottom:90px;
+    }
+  .cer_date{
+    width:200px;
+  }
+  .cer_name{
+    width: calc(100% - 200px);
+    text-align: left;
+  }
+    
+
+
+
+    /*****************************/
+    .tool_wrap{
+        margin:70px 0;
+    }
+    .tool, .skill{
+        display:flex;
+        padding:20px;
+        box-sizing: border-box;
+        flex-wrap:wrap;
+    }
+    .tool>li, .skill>li{
+        margin:0 40px 30px 0;
+    }
+    .tool img, .skill img{
+        width:auto;
+        height:45px;  
+    }
+
+/******************footer*****************/
+.bottom{
+    width:100%;
+    padding:0 0 30px;
+    box-sizing:border-box;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    position:relative;
+    color:#000;
+}
+.fish_wrap{
+  width:100%;
+  margin-bottom:30px;
+}
+.fish{
+  width:50px;
+  height:50px;
+  background-image: url(../img/fish.png);
+  background-size: 100% auto;
+  background-position: center center;
+  background-repeat: no-repeat;
+  animation: fish 10s infinite;
+  position:absolute;
+  
+}
+@keyframes fish {
+  from { left:0}
+  to {left: calc(100% - 100px)}
+}
+
+
+
+
+.go_top{
+    display:inline-block;
+    transform: rotate(90deg);
+    font-weight:bold;
+    float:right;
+}
+
+
+@media only screen and (max-width: 1740px) {
+
+table{
+  width:90%;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+}
+
+      @media only screen and (max-width: 1200px) {
+  
+    .about_poaster>h4{
+           font-size:4.5vw
+    }
+    .poaster1{  
+      top:220px;
+      right:210px;
+    }
+    .poaster2{
+      top: 500px;
+      left: 200px;
+    }
+    .yellow1{
+      width: 40%;
+    }
+      .yellow2{
+      width: 30%;
+      left: 10%;
+      top: 384px;
+    }
+      .yellow3{
+      width: 75%;
+      right: 0;
+      top: 593px;
+    }
+      .yellow4{
+      width: 5%;
+      left: 40%;
+      top: 384px;
+    }
+
+
+
+
+
+
+
+    .black_line {
+        width: 80%;
+    }
+
+
+  
+  
+  }
+        @media only screen and (max-width: 1000px) {
+
+    .about_poaster h4{
+        font-size:6vw
+    }
+    .about_poaster{
+       width: 100%;
+       padding:0;
+       box-sizing: border-box;
+    }
+
+
+
+
+    .poaster1{  
+      right:50px;
+    }
+    .poaster2{  
+      left:50px;
+    }
+    .yellow1{
+      width: 35%;
+    }
+      .yellow2{
+      width: 25%;
+    }
+      .yellow3{
+      width: 70%;
+    }
+      .yellow4{
+      width: 15%;
+    }
+
+    .black_line {
+        width: 100%;
+    }
+  
+    .front{
+        margin:150px 0 200px;
+        flex-wrap:wrap;
+      }
+      .front>div{
+         width:100%;
+      }
+      .name{
+        font-size:2.6vw;
+    }
+    .edu_table td:last-child{
+        display:none;
+      }
+
+
+
+
+  
+    }
+    @media only screen and (max-width: 768px) {
+
+    }
