@@ -2,7 +2,7 @@
     position:relative;
     width:100%;
     background-color: #0F4CE9;
-    animation: fadein 2s;
+    /* animation: fadein 2s; */
 }
 .contact_main{
     position:relative;
@@ -11,20 +11,37 @@
 }
 .wave_wrap{
     width:100%;
-    position:absolute;
+    /* position:absolute; */
     display:flex;
     right:0;
-    top:50vh;
     justify-content: flex-end;
 }
 .wave1{
-    width:30%
-    /*
-        width:500px;
+    width:20%;
     position:absolute;
-    animation:wave111 2s;
-    animation-fill-mode: both;*/
+    /* right:30%; */
+    animation:wave1 1s;
+    animation-fill-mode: both;
+}
+@keyframes wave1{
+    from {right: 0;
+        top:55vh;
+        }
 
+    to {
+        right:30%;
+        top:60vh;
+ }
+}
+@keyframes wave1_1{
+    from {right: 0;
+        top:55vh;
+        }
+
+    to {
+        right:40%;
+        top:70vh;
+ }
 }
 .wave1>div{
     width:100%;
@@ -34,23 +51,15 @@
     background-repeat: no-repeat;
     background-size: 100% auto;
 }
-/*
-@keyframes wave111 {
-    from {
-    left: 100%;
-    opacity: 0.7
-}
-    to {
-    left:40%;
-    opacity:1;
-}
-}
-*/
-
 
 
 .wave2{
-    width:40%
+    width:30%;
+    position:absolute;
+    /* right:0%; */
+    animation:wave2 1s;
+    animation-fill-mode: both;
+    animation-delay: 0.1s;
 }
 .wave2>div{
     width:100%;
@@ -60,26 +69,49 @@
     background-repeat: no-repeat;
     background-size: 100% auto;
 }
+@keyframes wave2{
+    from {right: -30%;
+        top: -10%;
+        top:55vh;
+        }
 
+    to {
+        right:0;
+        top:60vh;
+ }
+}
+@keyframes wave2_2{
+    from {right: -30%;
+        top: -10%;
+        top:55vh;
+        }
 
-
-
+    to {
+        right:0;
+        top:70vh;
+ }
+}
+.contact_wrap{
+    padding: 100px 0 0 50px;
+}
 .cpoaster_wrap{
-    text-align: left;
+
     box-sizing: border-box;
 }
 .cpoaster_wrap{
     width:100%;
-    padding-top:100px;
 }
 .cpoaster_wrap>p{
     font-size:90px;
     line-height:1.7;
     color:#F7EA49;
-
+}
+.contact_poaster1,.contact_poaster2{
+    text-align: left;
 }
 .contact_poaster3{
-    padding:0  0 0 400px;
+    text-align: left;
+    padding:0 0 0 50%;
     box-sizing:border-box;
 }
 
@@ -121,6 +153,10 @@
     width:33.333%;
     margin-bottom:30px;
 }
+.info_lte a{
+    color:#fff;
+    cursor: pointer;
+}
 .info_gr{
     width:100%;
     display:flex;
@@ -144,7 +180,7 @@
     align-items: center;
     justify-content: center;
 }
-.gr_r>i{
+.gr_r>a{
     display:block;
     width:80%;
     padding:30px 0;
@@ -152,6 +188,7 @@
     color:#000;
     font-weight:bold;
     background-color: #F7EA49;
+    font-family:'NanumBarunGothic';
 }
 
 .white_fish{
@@ -168,57 +205,94 @@
   .contact_bottom{
     color:#fff;
   }
+  .contact_bottom a{
+    color:#fff;
+  }
 
 
 
+  @media only screen and (max-width: 1400px) {
+    .contact_txt>p{
+        font-size:4vw;
+    }
+    .go_right{
+        padding-left:50px;
+    }
+    .cpoaster>p{
+        font-size:8vw;
+        line-height:3;
+    }
+  }
 
 
-
-
-@media only screen and (max-width: 1400px) {
-
-
-.contact_txt>p{
-    font-size:3.5vw;
-}
+@media only screen and (max-width: 1200px) {
+    .contact_txt>p{
+        font-size:3.5vw;
+        line-height:3;
+        color:#fff;
+    }
+    /* .cpoaster>p{
+        font-size:8vw;
+        line-height:3;
+    } */
+    .cpoaster_wrap>p {
+        font-size: 6.5vw;
+    }
 .go_right{
     padding-left:20px;
 }
-.wave_wrap{
-    top:55vh;
+.ppoaster_wrap {
+    padding: 100px 0 0 0;
+}
+.pro_poaster2 {
+    /* padding-left: 100px; */
+    padding-left:5%;
+
+
+
 }
 
 
-
-
-
 }
-
-
-
 
 
 @media only screen and (max-width: 1000px) {
-    .wave_wrap{
-        top:70vh;
+
+    .wave1{
+        width:30%;
+        animation:wave1_1 1s;
+        animation-fill-mode: both;
     }
+    .wave2{
+        width:40%;
+        animation: wave2_2 1s;
+        animation-fill-mode: both;
+    }
+
     .cpoaster_wrap{
 
         padding-left: 50px;
     }
     .cpoaster_wrap>p {
-        font-size: 9vw;
+        font-size: 8vw;
+    }
+    .contact_poaster1, .contact_poaster2{
         text-align: left;
     }
-    
 
     .contact_poaster3 {
-        padding: 0 0 0 45%;
-        box-sizing: border-box;
-    
+        text-align: right;
+        padding: 0 20% 0 0;
+}
+.contact_wrap{
+    font-size: 10vw;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
+    box-sizing: border-box;
 }
 .cpoaster_wrap{
-    padding-top:300px;
     text-align: center;
 
 }
@@ -240,6 +314,9 @@
    .go_right{
     padding-left:0;
 }
+.contact_info{
+    font-size:16px
+}
 .info_lte{
     text-align: center;
 }
@@ -260,8 +337,9 @@ margin: 20px auto 0;
     width:90%;
     margin-top:50px;
 }
-.gr_r>i{
+.gr_r>a{
     padding:20px 0;
+    font-size:14px;
 }
 
 

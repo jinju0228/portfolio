@@ -2,6 +2,30 @@
 
 
 window.onload = function() {
+
+
+    // var mockBtn = document.querySelectorAll(".mock_button");
+    // var mmockBtn = document.querySelectorAll(".mmock_button");
+    // var mockClose = document.querySelectorAll(".X");
+    // for(let i = 0; i < mockBtn.length ; i++){
+    //     mockBtn[i].addEventListener("click", function(){
+    //     document.querySelectorAll(".mock_popup")[i].style.display="block";
+    // })
+    //     mockClose[i].addEventListener("click", function(){
+    //     document.querySelectorAll(".mock_popup")[i].style.display="none";
+    // })
+    // }
+    // for(let i = 0; i < mmockBtn.length ; i++){
+    // mmockBtn[i].addEventListener("click", function(){
+    // document.querySelectorAll(".mock_popup")[i].style.display="block";
+    // })
+    // mockClose[i].addEventListener("click", function(){
+    // document.querySelectorAll(".mock_popup")[i].style.display="none";
+    // })
+    
+    // }
+
+
     var mu_home = document.getElementById('mu_home')
     var mu1 = document.getElementById('mu1')
     mu_home.style.display = "none"
@@ -11,11 +35,6 @@ window.onload = function() {
         mu2.classList.remove('goleft2')
         mu3.classList.remove('goleft3')
         mu4.classList.remove('goleft4')
-        mu1.classList.remove('born')
-        mu2.classList.remove('born')
-        mu3.classList.remove('born')
-        mu4.classList.remove('born')
-
     }   
     mu1.onclick = function() {
         mu_home.style.display = "block"
@@ -59,9 +78,25 @@ mmenu.onclick = function(){
     } else {
       x.style.display = "block";
     }
+}
+
+
+
 
 
 }
 
 
-}
+
+
+
+
+
+
+
+
+
+
+
+
+

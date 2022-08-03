@@ -41,12 +41,12 @@
                     </div>
                     <div>                        
                         <sapn class="lte_title">Git-Hub</sapn>
-                        <b>jin_ju0228</b>
+                        <b><a href="https://github.com/jinju0228">jin_ju0228</a></b>
                     </div>
                 </div>
                 <div class="info_gr">
                     <div class="gr_r">
-                        <i>이력서 다운로드</i>
+                        <a href="img/박진주(프론트엔드)_이력서.hwp" download>이력서 다운로드</a>
                     </div>
                 </div>
                 
@@ -55,9 +55,9 @@
         <div class="bottom contact_bottom">
           <div class="fish_wrap">
             <div class="white_fish"></div>
-            <div class="go_top">&#8592; go top</div>
+            <div class="go_top" @click="goTop4">&#8592; go top</div>
           </div>
-          <p>Git Hub :jinju0228</p>
+          <a href="https://github.com/jinju0228">Git Hub :jinju0228</a>
         </div>
     </section>
     
@@ -70,6 +70,12 @@ export default {
 return {
  
 }
+},
+methods: {
+  goTop4: function(){
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
 }
+
 }
 </script>

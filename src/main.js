@@ -8,6 +8,9 @@ import '/public/css/webclone.css'
 import '/public/css/project.css'
 import '/public/css/contact.css'
 import '/public/js/common.js'
+
+
+
 const app = createApp(App)
 app.use(router)
 app.mount('#app')

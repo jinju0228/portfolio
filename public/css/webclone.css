@@ -2,27 +2,115 @@
     width:100%;
     background-color: #F7EA49;
     position:relative;
-    animation: fadein 2s;
+    /* animation: fadein 2s; */
 
   }
-  .b_circle{
-    position:absolute;
-    right:0;
-    top:55vh;
-    width:35%;
-  }
-  .b_circle>div{
+  .bcircle>div{
     width:100%;
     padding-top:100%;
     background-color: #0F4CE9;
     border-radius: 50%;
     background-size: 100% auto;
   }
+  .circle1{
+    position:absolute;
+    /* right:0; */
+    top:55vh;
+    width:33%;
+    animation:bcircle 2s;
+    animation-delay: 0.2s;
+    animation-fill-mode: both;
+  }
+  @keyframes bcircle{
+    from {right: -33%;}
+    to {right: 0;}
+    
+  }
+
+.circle2{
+  position:absolute;
+  /* left: 30%; */
+  top: 90vh;
+  width:5%;
+  animation:sbcircle 1s;
+  animation-delay: 0.2s;
+  animation-fill-mode: both;
+}
+@keyframes sbcircle {
+  from {left:100%}
+  to {left: 30%}
+}
+.circle3{
+  position:absolute;
+  /* left: 30%; */
+  top: 215vh;
+  width:7%;
+  right:7%;
+  animation: bounce 1s infinite ease-in-out;
+}
+@keyframes tong3 {
+  0% {
+    top:215vh;
+  }
+  50% {
+    top:213vh;
+  }
+  100% {
+    top:215vh;
+  }
+}
+.circle4{
+  position:absolute;
+  /* left: 30%; */
+  /* top: 240vh; */
+  width:3%;
+  left:15%;
+  animation: tong4 2s infinite ease-in-out;
+
+}
+@keyframes tong4 {
+  0% {
+    top:319vh;
+
+  }
+  50% {
+    top:320vh;
+
+  }
+  100% {
+    top:319vh;
+
+  }
+
+}
+.circle5{
+  position:absolute;
+  width:6%;
+  /* right:10%; */
+  animation: tong5 2s infinite ease-in-out;
+}
+@keyframes tong5 {
+  0% {
+    top: 417vh;
+    right:9%
+  }
+  50% {
+      top: 420vh;
+      right:10%
+  }
+  100%{
+    top: 417vh;
+    right:9%
+  }
+
+}
   .whale{
     position:absolute;
-    right:15%;
-    top:55vh;
+    right:10%;
+    top:54vh;
     width:40%;
+    animation:whale 2s linear;
+    animation-fill-mode: both;
   }
   .whale>div{
     width:100%;
@@ -32,9 +120,34 @@
     background-position: center center;
     background-size: 100% auto;
   }
+  @keyframes whale {
+
+    0% {
+      right: -20%;
+      top: 50vh;
+    }
+    15% {
+      right:-10%;
+      top:52vh;
+    }
+    25% {
+      right:0%;
+      top: 55vh;
+    }
+    50% {
+      right: 10%;
+      top:52vh;
+    }
+    100% {
+      right:15%;
+      top:55vh;
+    }
+  }
+
+
 .wpoaster_wrap{
   padding-top:150px;
-  padding-left:100px;
+  padding-left:50px;
   box-sizing: border-box;
   text-align: left;
   color:#000;
@@ -70,16 +183,20 @@
   color:#000;
   margin-bottom:50px;
  }
+ .clone_title>h4{
+  font-weight:bold;
+ }
  .clone_title>h4>span{
   font-size:20px;
   line-height:50px;
   margin-left:20px;
+  font-family:'NanumBarunGothic';
  }
  .one_wrap{
   display:flex;
   flex-wrap:wrap;
   justify-content: space-between;
-  padding-bottom:250px;
+  margin-bottom:250px;
   color:#000;
  }
  .one{
@@ -141,16 +258,25 @@
 .one_info>div{
   width:100%;
   display:flex;
-  flex-wrap:wrap;
+
+  /* overflow:hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; */
 }
 .one_info>div>div{
   width:130px;
   margin-right:20px;
 }
 .one_info>div>a{
+  display:block;
   width:calc(100% - 150px);
-  display:flex;
+  /* display:flex; */
   z-index:2000;
+  line-height: 30px;
+  overflow:hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color:#000;
 }
 .heroku_wrap{
   margin-bottom:20px;
@@ -171,6 +297,9 @@
   padding:15px;
   box-sizing: border-box;
 }
+.one_overview span{
+  font-family:'NanumBarunGothic';
+}
 .mobile_oneInfo{
   display:none;
 }
@@ -185,16 +314,13 @@
 
 @media only screen and (max-width: 1400px) {
   .one_info>div>div{
-    width:100%;
+    width:130px;
   }
-  .one_info>div>a{
-    display:inline-block;
-    width:100%;
-    display:flex;
-    overflow:hidden;
-    text-overflow: ellipsis;
+   .one_info>div>a{
+    width:calc(100% - 130px)
+
     
-  }
+  } 
   .one_bottom{
     padding:20px 15px 0;
   }
@@ -210,6 +336,11 @@
 }
 
 
+@media only screen and (max-width: 1200px) {
+  .wpoaster_wrap>h2{
+    font-size:4.5vw;
+  }
+}
 @media only screen and (max-width: 1000px) {
   .wpoaster_wrap {
     padding-top: 0;
@@ -229,10 +360,18 @@
   .web_art1 {
     padding-top: 50px;
 }
-.one_wrap{
-  padding-bottom:100px;
+.one{
+  justify-content: center;
 }
-  .one_img, .one_txt{
+.one_wrap{
+  margin-bottom:100px;
+}
+
+
+.one_img{
+  width:80%;
+}
+ .one_txt{
     width:100%;
   }
  .one_img{
@@ -270,6 +409,7 @@
       justify-content: space-around;
       margin:20px;
       z-index:2000;
+      flex-wrap:wrap;
       
   
   }
@@ -282,6 +422,6 @@
     width:auto;
   }
   .wpoaster_wrap>h2{
-    font-size:8vw;
+    font-size:6.5vw;
   }
 }

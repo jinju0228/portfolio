@@ -2,7 +2,11 @@
     width:100%;
     position:relative;
     background-color: #AE888D;
-    animation: fadein 2s;
+    /* animation: fadein 2s; */
+}
+.fixed{
+    position:fixed;
+    overflow:hidden;
 }
 .plzleft{
     text-align: left;
@@ -19,6 +23,7 @@
     padding:100px 0 0 50px;
     box-sizing: border-box;
     text-align: left;
+
 }
 .pro_poaster2{
     padding-left:200px;
@@ -50,17 +55,139 @@
     	transform: rotate(360deg);
     }
 }
+.project_art1{
+    position:relative;
+}
+.mockup_wrap{
+    display:flex;
+    justify-content: center;
+    margin-top:20px;
+}
+.mock_button{
+    width:90%;
+    height:55px;
+    background-color: #fff;
+    color:#000;
+    border:none;
+    font-weight:bold;
+    display:flex;
+    justify-content: center;
+    line-height:55px;
+    z-index:2000;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.mmock_button{
+    display:block;
+    background-color: #fff;
+    color:#000;
+    font-weight:bold;
+    display:flex;
+    justify-content: center;
+    line-height:55px;
+    z-index:2000;
+    cursor: pointer;
+    line-height:40px;
+    padding: 0 10px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+.mock_popup{
+    width: calc(50% - 20px);
+    height: 85vh;
+    position:absolute;
+    bottom:0;
+    right:0;
+    display:flex;
+    z-index:2100;
+    background-color: #fff;
+    flex-wrap: wrap;
+    /* display:none; */
+}
+
+.mock_popup>div{
+    width:100%;
+    background-color:rgba(206, 206, 206, 0.3);
+
+}
+.mock_img{
+    width:100%;
+    height:auto;
+}
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.mock_img{
+    padding: 10px 20px;
+    box-sizing:border-box;
+    overflow-y: scroll;
+    width: 100%;
+    height: calc(85vh - 50px);
+    -ms-overflow-style: none;
+}
+
+ .mock_img::-webkit-scrollbar{
+   display:none;
+ }
+
+
+
+.mock_img>img{
+    width:100%;
+}
+.mock_title{
+    padding: 20px 20px 0;
+    box-sizing:border-box;
+    text-align: right;
+}
+.mock_title>p{
+    font-size:25px;
+    text-align: center;
+}
+.mock_title>p>span{
+    margin-left:10px;
+}
+.mock_title>i{
+    font-size: 20px;
+    text-align: right;
+    padding: 5px;
+    cursor: pointer;
+}
+@media only screen and (max-width: 1400px) {
+.circle {
+    bottom: -20%;
+    right: -10%;
+    width: 30%;
+}}
 @media only screen and (max-width: 1200px) {
 
 .project_wrap{
-    font-size:7vw;
+    font-size:6.5vw;
 }
 
 .pro_poaster2{
     padding-left:30px;
     box-sizing: border-box;
+}
+.circle {
+    bottom: -10%;
+    right: -40%;
+    width: 40%;
 }
 }
 
@@ -68,7 +195,8 @@
 @media only screen and (max-width: 1000px) {
     .ppoaster_wrap {
         padding: 0;
-        font-size:9vw;
+        font-size:8vw;
+        line-height:1.8
     }
     .project_wrap{
         font-size:10vw;
@@ -81,7 +209,24 @@
     .circle{
         width:30%;
         bottom: 170px;
-    right: 0;
+    right: 5%;
     }
-    
+    .mock_popup{
+        width: 80%;
+        height: 60vh;
+        position:absolute;
+        bottom:10%;
+        right:50%;
+        transform: translate(+50%, 0);
+    }
+
+    .mock_img{
+        padding: 10px 20px;
+        box-sizing:border-box;
+        overflow-y: scroll;
+        width: 100%;
+        height: calc(60vh - 50px);
+        -ms-overflow-style: none;
+    }
+
 }

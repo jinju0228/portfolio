@@ -2,8 +2,7 @@
   .about_back{
     width:100%;
     background-color: #E3E3D1;
-    position:relative;
-    animation: fadein 2s;
+    /* animation: fadein 2s; */
   }
 
     .yellow{
@@ -11,41 +10,75 @@
         display:flex;
         z-index:1;
       }
-    .yellow1{
-      width: 274px;
-      left: 23%;
-      top: 0;
-    }
+
+
     .yellow>div{
       width:100%;
       background-color: #F7EA49;
     }
+    .yellow1{
+      width: 274px;
+      left: 23%;
+      /* top: 0; */
+      animation:yellow1 1s;
+      animation-fill-mode: both;
+      animation-delay:0.5s;
+    }
+    @keyframes yellow1{
+      from {top: -20%}
+      to {top: 0}
+    }
     .yellow1>div{
       padding-top:114.23%;
+    }
+    @keyframes yellow2{
+      from {bottom: -20%}
+      to {bottom: 30%}
     }
     .yellow2{
       width: 200px;
       height: 308px;
       left: 10%;
-      top: 384px;
+      animation:yellow2 1s;
+      animation-fill-mode: both;
+      animation-delay:0.5s;
+      /* top: 384px; */
     }
     .yellow2>div{
       padding-top:194%;
+    }
+    @keyframes yellow3{
+      from { right: -50%;}
+      to { right: -10%}
     }
     .yellow3{
      width: 808px;
      height: 212px;
      right: -10%;
      top: 593px;
+     animation:yellow3 1s;
+     animation-fill-mode: both;
+     animation-delay:0.5s;
     }
     .yellow3>div{
       padding-top:26.5%;
+    }
+    @keyframes yellow4{
+      from {
+        left:100%
+      }
+      to {
+        left:55%
+      }
     }
     .yellow4{
       width: 110px;
       height: 110px;
       left: 55%;
       top: 384px;
+      animation:yellow4 1s;
+      animation-fill-mode: both;
+      animation-delay:0.5s;
     }
     .yellow4>div{
       padding-top:100%;
@@ -75,6 +108,7 @@
       font-weight:400;
       display:flex;
       z-index:500;
+      color:#000;
     }
     .black_line{
       width:600px;
@@ -105,6 +139,7 @@
       margin:150px 0 200px;
       display:flex;
       justify-content: space-between;
+      color:#000;
     }
     .front>div{
       width:calc(50% - 30px);
@@ -127,8 +162,12 @@
     .name{
       font-size:26px;
     }
+    .edu,.cer,.tool_wrap,.skill_wrap{
+      color:#000
+    }
     .edu,.tool_wrap{
       margin:100px 0 70px;
+      
     }
     .cer,.skill_wrap{
         margin:0 0 70px;
@@ -209,9 +248,19 @@
     position:relative;
     color:#000;
 }
+
+.bottom>a{
+  display:block;
+  display:flex;
+  z-index:2100;
+  color:#000;
+  font-weight:bold;
+  cursor: pointer;
+}
 .fish_wrap{
   width:100%;
   margin-bottom:30px;
+  text-align: right;
 }
 .fish{
   width:50px;
@@ -236,7 +285,13 @@
     display:inline-block;
     transform: rotate(90deg);
     font-weight:bold;
-    float:right;
+    display:flex;
+    z-index:2100;
+    position:relative;
+    display: inline-block;
+    cursor: pointer;
+    padding:10px;
+    
 }
 
 
@@ -342,15 +397,30 @@ table{
       .name{
         font-size:2.6vw;
     }
+    .edu_table, .cer_table{
+      width:calc(100% - 30px);
+    }
     .edu_table td:last-child{
         display:none;
       }
-
+      /* .edu_table td:first-child {
+        width: auto;
+    } */
 
 
 
   
-    }
-    @media only screen and (max-width: 768px) {
+  }
 
-    }
+  @media only screen and (max-width: 660px) {
+    
+    .edu_table td:first-child {
+      width:170px;
+  }
+    .edu_table td:nth-child(3) {
+      display:none;
+  }
+  .cer_table td:first-child {
+    width:170px;
+}
+  }

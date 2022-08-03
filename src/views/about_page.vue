@@ -68,9 +68,9 @@
         <div class="bottom">
           <div class="fish_wrap">
             <div class="fish"></div>
-            <div @click="onScroll" class="go_top">&#8592;go top</div>
+            <div class="go_top" @click="goTop">&#8592;go top</div>
           </div>
-          <p>Git Hub :jinju0228</p>
+          <a href="https://github.com/jinju0228">Git Hub :jinju0228</a>
         </div>       
     </section>
       
@@ -97,20 +97,17 @@ return {
   scrollY: 0
 }
 },
+
  mounted() {
 
-    window.addEventListener("scroll", this.onScroll);
-    window.addEventListener("load", () => {
-      this.onScroll();
-    });
-  },
-  methods: {
-    onScroll() {
-      this.scrollY = window.pageYOffset;
-    },
 
-
+},methods: {
+  goTop: function(){
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
 }
+
+
 
 }
 

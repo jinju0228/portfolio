@@ -15,7 +15,7 @@
         <span>T</span>
         <b>010-8758-9982</b>
       </div>
-      <div>
+      <div class="ifoot2">
         <span>E</span>
         <b>jin_ju28@daum.net</b>
       </div>
@@ -33,6 +33,8 @@
   .intro_title{
     padding:165px 0 0 120px;
     text-align:left;
+    font-family:'Avenir LT Std 45 Book Book';
+    color:#000;
   }
   .intro_title>h2{
     margin-bottom:50px;
@@ -64,9 +66,9 @@
   .intro_img{
     position:absolute;
     right:380px;
-    bottom:60px;
+    bottom:80px;
     width:40%;
-    animation: moon .5s infinite;
+
  }
 .moon{
   width:100%;
@@ -74,12 +76,17 @@
   background-image:url('/public/img/moon+people.png');background-repeat: no-repeat;
   background-size:100% auto;
   background-position: center center;
-}
-@keyframes moon{
-  from {rotate: 0deg}
-  to { rotate: 90deg}
+  animation: spin 5s infinite;
+  transition:1s;
+
+
 }
 
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  50% { transform: rotate(5deg); }
+  100% {transform: rotate(0deg); }
+}
 
   @media only screen and (max-width: 1200px) {
 .intro_title {
@@ -87,10 +94,10 @@
 }
   .intro_title>h2{
     margin-bottom: 20px;
-    font-size: 4vw;
+    font-size: 5vw;
     }
   .intro_title>p{
-    font-size: 4vw;
+    font-size: 5vw;
   }
   .intro_img{
     width: 40%;
@@ -107,8 +114,17 @@
     transform: translate( +50%, 0);
   }
   .intro_footer{
+     width: 90%;
+    display: flex;
+    justify-content: center;
     left:50%;
     transform: translate(-50%, 0);
+  }
+  .ifoot1 {
+    margin-right: 10px;
+}
+  .ifoot2 {
+    margin-left:10px;
   }
   }
 </style>
