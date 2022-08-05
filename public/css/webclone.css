@@ -108,7 +108,7 @@
     position:absolute;
     right:10%;
     top:54vh;
-    width:40%;
+    width:37%;
     animation:whale 2s linear;
     animation-fill-mode: both;
   }
@@ -173,8 +173,11 @@
 
 
  /*****************************/
+ .web_plz{
+  margin-bottom:100px;
+ }
  .web_art1{
-  padding-top:100px;
+  /* padding-top:100px; */
   text-align: left;
  }
  .clone_title{
@@ -254,6 +257,7 @@
   padding:20px 20px 20px 20px;
   box-sizing: border-box;
   background-color: rgba(255,255,255,0.8);
+  border-radius:5px;
 }
 .one_info>div{
   width:100%;
@@ -266,6 +270,8 @@
 .one_info>div>div{
   width:130px;
   margin-right:20px;
+  display: flex;
+  justify-content: center;
 }
 .one_info>div>a{
   display:block;
@@ -278,6 +284,7 @@
   white-space: nowrap;
   color:#000;
 }
+
 .heroku_wrap{
   margin-bottom:20px;
 }
@@ -303,15 +310,18 @@
 .mobile_oneInfo{
   display:none;
 }
-.web_line i{
+/* .web_line i{
     position:absolute;
     top:-2px;
     left:150px;
     line-height:50px;
     font-size:20px;
     color:#000;
-}
-
+} */
+.web_line>i{
+  position: absolute;
+  left: 150px;
+ }
 @media only screen and (max-width: 1400px) {
   .one_info>div>div{
     width:130px;
@@ -415,7 +425,7 @@
   }
   .mobile_oneInfo>a{
     display:inline-block;
-    height:40px;
+    height:30px;
   }
   .mobile_oneInfo>a>img{
     height:100%;
@@ -424,4 +434,17 @@
   .wpoaster_wrap>h2{
     font-size:6.5vw;
   }
+
+  .clone_title {
+    padding: 15px 0;
+    line-height: 1.4;
+    color: #000;
+    margin-bottom: 30px;
+}
+  .clone_title>h4{
+    font-size:26px;
+   }
+   .web_line>i{
+    left: 130px;
+   }
 }

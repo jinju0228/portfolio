@@ -80,11 +80,40 @@ mmenu.onclick = function(){
     }
 }
 
+var animation = function () {
+    var items, winH;
+    var initModule = function () {
+      items = document.querySelectorAll(".Art");
+      winH = window.innerHeight;
+      _addEventHandlers();
+    }
+    var _addEventHandlers = function () {
+      window.addEventListener("scroll", _checkPosition);
+      window.addEventListener("load", _checkPosition);
+      window.addEventListener("resize", initModule);
+    };
+   var _checkPosition = function flip(){
+     for(let i = 0; i < items.length; i++){
+       var artTop = items[i].getBoundingClientRect().top;
+       if (winH > artTop) {
+        items[i].classList.add('fadein')
+        // alert('확인')
 
-
-
-
+      }
+    }
+       }
+   return {
+     init4: initModule
+   }
+  }
+  animation().init4();
 }
+
+
+
+
+
+
 
 
 

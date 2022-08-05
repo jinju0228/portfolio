@@ -15,7 +15,7 @@
         <article id="" class="web_art1 project_art1" v-for='project in one' :key="project">
             <div class="one_wrap">
                 <div>
-                    <div class="black_line"><span>1.5Month +  α</span><i>#WEB SITE</i> </div>
+                    <div class="black_line project_line"><span>1.5Month +  α</span><i>#WEB SITE</i> </div>
                     <div class="clone_title">
                         <h4>{{project.titleE}}<span>{{project.titleK}}</span></h4>
                         <h5>{{project.company}}</h5>
@@ -41,11 +41,11 @@
                         <div class="one_info">
                             <div class="heroku_wrap">
                                 <div><img class="heroku" src="img/9.png"></div>
-                                <a v-bind:href="project.heroku"><span>{{project.heroku}}</span></a>
+                                <a v-bind:href="project.heroku" target='_blank'><span>{{project.heroku}}</span></a>
                             </div>
                             <div class="github_wrap">
                                 <div><img class="github" src="img/8.png"></div>
-                                <a v-bind:href="project.github">{{project.github}}</a>
+                                <a v-bind:href="project.github" target='_blank'>{{project.github}}</a>
                             </div>
                             <div class="mockup_wrap">
                                 <button class="mock_button" @click="mockup" type="button">MOCKUP CLICK</button>
@@ -67,7 +67,7 @@
             </div>
             <div class="mock_popup" v-show="is_show">
                 <div class="mock_title">
-                    <i @click="handle_toggle" class="X">X</i>
+                    <i @click="handle_toggle" class="X"></i>
                     <!-- <p>{{project.titleE}}<span>MOCKUP</span><i @click="handle_toggle">X</i></p> -->
                 </div>
                 <div class="mock_img"> 
@@ -80,7 +80,7 @@
             <div class="fish"></div>
             <div class="go_top" @click="goTop3">&#8592; go top</div>
           </div>
-          <a href="https://github.com/jinju0228">Git Hub :jinju0228</a>
+          <a href="https://github.com/jinju0228" target='_blank'>Git Hub :jinju0228</a>
         </div>
 
     </section>
@@ -94,8 +94,8 @@ export default {
   name: 'project-page',
   data:function() {
 return {
- one:[{titleE:'NIGHTSEOMUN ',titleK:'서문시장야시장',company:'대구에 위치한 총거리 350M에 달하는 대형 야시장', projectUrl:"../img/seomun.png",type:'Personal project',role:'',skill:['HTML','CSS','JavaScript','VsCode', 'mysql','node.js','heroku','github'],check:['video','Resposive'],heroku:"https://nightmarketseomun.herokuapp.com/",github:'https://github.com/jinju0228/nmarket.git',overview:'설계부터 구현까지 혼자 해본 첫 번째 프로젝트. 마음에 쏙 드는 결과물은 아니지만 6개월 얼마나 성장했는지 보여줄 수 있는 프로젝트라고 생각한다. ',mockupUrl:'../img/whale.png'},
- {titleE:'HEYNATURE',titleK:'헤이네이처',company:'자연주의 화장품 브랜드',projectUrl:'../img/heynature.png',type:'project',role:'Main page + α(supplementation)', skill:['HTML','CSS','JavaScript','VsCode', 'mysql','node.js','heroku','github'],check:['fullpage.js','animation','swiper slide','github'], heroku:'https://heynature.herokuapp.com/', github:'https://github.com/jinju0228/heynature2.git',overview:'소통의 중요성을 느낄 수 있었던 팀 프로젝트. 한달 반 동안 우여곡절이 많았지만 그만큼 배운게 많았다. ', mockupUrl:'../img/heynature_mockup.jpg'}
+ one:[{titleE:'NIGHTSEOMUN ',titleK:'서문시장야시장',company:'대구에 위치한 총거리 350M에 달하는 대형 야시장', projectUrl:"../img/seomun.png",type:'Personal project',role:'',skill:['HTML','CSS','JavaScript','JQuery','VsCode', 'Mysql','Node.js','Heroku','Github'],check:['Video','DB(GET/POST)','Kakao Login API','Resposive'],heroku:"https://nightmarketseomun.herokuapp.com/",github:'https://github.com/jinju0228/nmarket.git',overview:'설계부터 구현까지 혼자 해본 첫 번째 프로젝트. 마음에 쏙 드는 결과물은 아니지만 6개월 얼마나 성장했는지 보여줄 수 있는 프로젝트라고 생각한다. ',mockupUrl:'../img/SEOMUN_MOCKUP.png'},
+ {titleE:'HEYNATURE',titleK:'헤이네이처',company:'자연주의 화장품 브랜드',projectUrl:'../img/heynature.png',type:'Team Project',role:'Main page + α(supplementation)', skill:['HTML','CSS','JavaScript','JQuery','VsCode', 'Mysql','Node.js','Heroku','Github'],check:['Fullpage.js','DB(GET/POST)','Animation','Swiper slide','Responsive'], heroku:'https://heynature.herokuapp.com/', github:'https://github.com/jinju0228/heynature_update_ver.git',overview:'소통의 중요성을 느낄 수 있었던 팀 프로젝트. 한달 반 동안 우여곡절이 많았지만 그만큼 배운게 많았다. ', mockupUrl:'../img/heynature_mockup.jpg'}
   ],
   is_show: false
         }

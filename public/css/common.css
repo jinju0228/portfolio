@@ -117,10 +117,17 @@ border:1px solid #333;
     animation: myhome 0.3s;
     animation-fill-mode: both;
     color:#000;
+    
 }
 .mu_home>a{
   display:block;
   height:100vh;
+}
+.menu_active{
+  width: 100%;
+  flex: 1;
+  background-color: transparent;
+  pointer-events: none;
 }
 @keyframes myhome {
     from {
@@ -365,6 +372,8 @@ border:1px solid #333;
         height:30px;
         padding-top:6px;
         box-sizing: border-box;
+        display: flex;
+        align-items: center;
   
         
       }

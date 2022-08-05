@@ -3,7 +3,7 @@
     <div class="intro_title">
         <h2>CREATIVE</h2>
         <h2>DEVELOPER</h2>
-        <p>SENSIBLE TO FRONTEND</p>
+        <p id="change">SENSIBLE TO FRONTEND</p>
     </div>
     <div class=intro_img>
       <div class="moon">
@@ -35,13 +35,28 @@
     text-align:left;
     font-family:'Avenir LT Std 45 Book Book';
     color:#000;
+    /* animation:leaves 2s;
+    animation-fill-mode: both;
+    animation-delay: 1; */
+
   }
+ @keyframes leaves {
+        0% {
+            transform: scale(1.0);
+            -webkit-transform: scale(1.0);
+        }
+        100% {
+            transform: scale(2.0);
+            -webkit-transform: scale(2.0);
+        }
+    }
   .intro_title>h2{
     margin-bottom:50px;
     font-size:45px;
     font-weight:bold;
   }
-  .intro_title>p{
+  .intro_title p{
+    display:inline-block;
     font-size:45px;
     font-weight:lighter;
   }
@@ -88,6 +103,8 @@
   100% {transform: rotate(0deg); }
 }
 
+
+
   @media only screen and (max-width: 1200px) {
 .intro_title {
     padding: 120px 0 0 60px;
@@ -96,7 +113,7 @@
     margin-bottom: 20px;
     font-size: 5vw;
     }
-  .intro_title>p{
+  .intro_title p{
     font-size: 5vw;
   }
   .intro_img{
@@ -126,5 +143,30 @@
   .ifoot2 {
     margin-left:10px;
   }
+
+
   }
 </style>
+<script>
+export default {
+  name: 'intro-page',
+  data:function() {
+return {
+ 
+methods: {
+  change: function(){
+    var text = ['SENSIBLE TO FRONTEND',"JINJU'S PAGE"];
+    var myText = document.getElementById('change');
+    var curIdx = text.indexOf(myText.innerHTML);
+    myText.innerHTML = text[(curIdx+3)%text.length];
+  
+  }
+
+}
+
+
+}}
+}
+
+
+</script>

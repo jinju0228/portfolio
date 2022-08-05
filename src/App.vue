@@ -3,8 +3,8 @@
   <!-- <router-link to='/intro'>home</router-link> -->
   <ul class="menu">
     <li id="mu_home" class="mu_home"><router-link to='/'><a><span class="mu mu_home">home</span></a></router-link></li>
-    <li id="mu1" @click="about"><router-link to='/about'><a><span class="mu mu1">about</span></a></router-link></li>
-    <li id="mu2" @click="webclone"><router-link to='/webclone'><a><span class="mu mu2">webclone</span></a></router-link></li>
+    <li id="mu1"><router-link to='/about'><a><span class="mu mu1">about</span></a></router-link></li>
+    <li id="mu2"><router-link to='/webclone'><a><span class="mu mu2">webclone</span></a></router-link></li>
     <li id="mu3"><router-link to='/project'><a><span class="mu mu3">project</span></a></router-link></li>
     <li id="mu4"><router-link to='/contact'><a><span class="mu mu4">contact</span></a></router-link></li>
   </ul>
@@ -30,7 +30,7 @@
 
 
 
-<router-view>
+<router-view :key="$route.fullPath">
   
 </router-view>
 
@@ -44,12 +44,39 @@ export default {
   components: {
     
   },
+//     mounted() {
+//     window.addEventListener('beforeunload', this.unLoadEvent);
+//   },
+//   beforeUnmount() {
+//     window.removeEventListener('beforeunload', this.unLoadEvent);
+//   },
+
+  
+//   methods: {
+
+// unLoadEvent: function (event) {
+//       if (this.isLeaveSite) return;
+//        event.preventDefault();
+//        event.returnValue = '';
+//     },
+
+//   }
+        
+        
+    }
+
+
+
+
+
+
+
 
   
   
 
   
-}
+
 </script>
 
 <style>

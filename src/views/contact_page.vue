@@ -37,11 +37,11 @@
                     </div>
                     <div>
                         <sapn class="lte_title">EㅡMail</sapn>
-                        <b>jin_ju28@daum.net</b>
+                        <b><a href='mailto:jin_ju28@daum.net'>jin_ju28@daum.net</a></b>
                     </div>
                     <div>                        
                         <sapn class="lte_title">Git-Hub</sapn>
-                        <b><a href="https://github.com/jinju0228">jin_ju0228</a></b>
+                        <b><a href="https://github.com/jinju0228" target='_blank'>jin_ju0228</a></b>
                     </div>
                 </div>
                 <div class="info_gr">
@@ -57,7 +57,7 @@
             <div class="white_fish"></div>
             <div class="go_top" @click="goTop4">&#8592; go top</div>
           </div>
-          <a href="https://github.com/jinju0228">Git Hub :jinju0228</a>
+          <a href="https://github.com/jinju0228" target='_blank'>Git Hub :jinju0228</a>
         </div>
     </section>
     

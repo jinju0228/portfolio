@@ -91,6 +91,7 @@
     padding: 0 10px;
     border-radius: 5px;
     font-size: 12px;
+    border-radius: 5px;
 }
 .mock_popup{
     width: calc(50% - 20px);
@@ -100,19 +101,14 @@
     right:0;
     display:flex;
     z-index:2100;
-    background-color: #fff;
+    background-color:#f0f0f0;
     flex-wrap: wrap;
+    border-radius:5px;
     /* display:none; */
 }
 
 .mock_popup>div{
     width:100%;
-    background-color:rgba(206, 206, 206, 0.3);
-
-}
-.mock_img{
-    width:100%;
-    height:auto;
 }
 
 
@@ -120,25 +116,13 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 .mock_img{
-    padding: 10px 20px;
-    box-sizing:border-box;
     overflow-y: scroll;
     width: 100%;
-    height: calc(85vh - 50px);
     -ms-overflow-style: none;
+    padding: 10px 20px 20px;
+    box-sizing: border-box;
+    height: calc(100% - 75px);
 }
 
  .mock_img::-webkit-scrollbar{
@@ -162,12 +146,26 @@
 .mock_title>p>span{
     margin-left:10px;
 }
+.mock_title{
+    display: flex;
+    justify-content: flex-end;
+}
 .mock_title>i{
-    font-size: 20px;
-    text-align: right;
+    display: block;
     padding: 5px;
     cursor: pointer;
+    background-image: url(../img/close.png);
+    width:25px;
+    height:25px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+
 }
+.project_line>i{
+    position:absolute;
+    left:170px;
+   }
 @media only screen and (max-width: 1400px) {
 .circle {
     bottom: -20%;
@@ -221,12 +219,31 @@
     }
 
     .mock_img{
-        padding: 10px 20px;
-        box-sizing:border-box;
         overflow-y: scroll;
         width: 100%;
-        height: calc(60vh - 50px);
         -ms-overflow-style: none;
+        box-sizing: border-box;
+        padding: 10px 10px 10px;
+        height: calc(100% - 55px);
     }
 
-}
+      .project_title {
+        padding: 15px 0;
+        line-height: 1.4;
+        color: #000;
+        margin-bottom: 30px;
+    }
+
+       .project_line>i{
+        left:140px;
+       }
+       .mock_title {
+        padding: 10px 10px 0;
+    }
+       .mmock_button{
+        line-height:30px;
+       }
+       .mock_img{
+
+       }
+}  

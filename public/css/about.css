@@ -4,85 +4,92 @@
     background-color: #E3E3D1;
     /* animation: fadein 2s; */
   }
+  .fadein{
+    animation: fadein 2s;
+    animation-fill-mode: both;
+  }
+.yellow{
+  position:absolute;
+  display:flex;
+  z-index:1;
+}
+.yellow>div{
+  background-color: #F7EA49;
+}
+.yellow1{
+  width:30%;
+  left: 23%;
+  top: 0;
+  animation:yellow1 1s;
+  animation-fill-mode: both;
+  animation-delay:0.4s;
+}
+.yellow1>div{
+  padding-top:114.23%;
+  width:100%;
+}
+@keyframes yellow1{
+from {top: -30%}
+to {top: 0}
+}
 
-    .yellow{
-        position:absolute;
-        display:flex;
-        z-index:1;
-      }
+.yellow2{
+  width:20%;
+  left: 10%;
+  bottom: 10%;
+  animation:yellow2 1s;
+  animation-fill-mode: both;
+  animation-delay:0.4s;
+}
+.yellow2>div{
+  padding-top:154%;
+  width:100%;
+}
+@keyframes yellow2{
+  from {bottom: -20%}
+  to {bottom: 10%}
+}
 
 
-    .yellow>div{
-      width:100%;
-      background-color: #F7EA49;
-    }
-    .yellow1{
-      width: 274px;
-      left: 23%;
-      /* top: 0; */
-      animation:yellow1 1s;
-      animation-fill-mode: both;
-      animation-delay:0.5s;
-    }
-    @keyframes yellow1{
-      from {top: -20%}
-      to {top: 0}
-    }
-    .yellow1>div{
-      padding-top:114.23%;
-    }
-    @keyframes yellow2{
-      from {bottom: -20%}
-      to {bottom: 30%}
-    }
-    .yellow2{
-      width: 200px;
-      height: 308px;
-      left: 10%;
-      animation:yellow2 1s;
-      animation-fill-mode: both;
-      animation-delay:0.5s;
-      /* top: 384px; */
-    }
-    .yellow2>div{
-      padding-top:194%;
-    }
-    @keyframes yellow3{
-      from { right: -50%;}
-      to { right: -10%}
-    }
-    .yellow3{
-     width: 808px;
-     height: 212px;
-     right: -10%;
-     top: 593px;
-     animation:yellow3 1s;
-     animation-fill-mode: both;
-     animation-delay:0.5s;
-    }
-    .yellow3>div{
-      padding-top:26.5%;
-    }
-    @keyframes yellow4{
-      from {
-        left:100%
-      }
-      to {
-        left:55%
-      }
-    }
-    .yellow4{
-      width: 110px;
-      height: 110px;
-      left: 55%;
-      top: 384px;
-      animation:yellow4 1s;
-      animation-fill-mode: both;
-      animation-delay:0.5s;
-    }
-    .yellow4>div{
-      padding-top:100%;
-    }
+.yellow3{
+  width:15%;
+  right:-10%;
+  top:40%;
+  animation:yellow3 1s;
+  animation-fill-mode: both;
+  animation-delay:0.4s;
+}
+.yellow3>div{
+  padding-top:100%;
+  width:100%;
+}
+@keyframes yellow3{
+  from {right: -10%;}
+  to {right: 25%}
+}
+
+
+.yellow4{
+  width:90%;
+  left:55%;
+  bottom:5%;
+  animation:yellow4 1s;
+  animation-fill-mode: both;
+  animation-delay:0.4s;
+}
+.yellow4>div{
+  padding-top:23.043%;
+  width:100%;
+}
+@keyframes yellow4{
+  from {
+    left:100%
+  }
+  to {
+    left:55%
+  }
+}
+
     .about_poaster{
       width: 1250px;
       height:100vh;
@@ -128,9 +135,7 @@
       left:0
     }
     .black_line>i{
-      position:absolute;
       top:-2px;
-      left:170px;
       line-height:50px;
       font-size:20px;
       color:#000;
@@ -148,16 +153,22 @@
     .my_img{
       width:100%;
       height:100%;
-      background-color:#fff;
+      /* background-color:#fff; */
+    }
+    .my_img>img{
+      height:100%;
+      width:auto;
     }
     .my_info{
       justify-content: space-between;
       flex-direction: column;
       height:100%;
-      padding:30px 0 0;
+      padding:30px 0 0 100px;
       box-sizing:border-box; 
       display: flex;
       font-size:20px;
+      font-family:'NanumBarunGothic';
+      text-align: left;
     }
     .name{
       font-size:26px;
@@ -195,6 +206,7 @@
       height:50px;
       padding: 20px 5px;
       box-sizing: border-box;
+      font-family:'NanumBarunGothic';
     }
     .edu_table td:first-child{
       width:200px;
@@ -309,14 +321,22 @@ table{
     .about_poaster>h4{
            font-size:4.5vw
     }
-    .poaster1{  
+    /* .poaster1{  
       top:220px;
       right:210px;
     }
     .poaster2{
       top: 500px;
-      left: 200px;
+      left: 200px;} */
+      .black_line {
+        width: 80%;
     }
+
+
+  
+  
+  }
+    /* }
     .yellow1{
       width: 40%;
     }
@@ -334,7 +354,7 @@ table{
       width: 5%;
       left: 40%;
       top: 384px;
-    }
+    } */
 
 
 
@@ -342,16 +362,18 @@ table{
 
 
 
-    .black_line {
-        width: 80%;
-    }
 
-
-  
-  
-  }
         @media only screen and (max-width: 1000px) {
-
+        .poaster1{  
+          width:100%;
+            top:30vh;
+            left:5%;
+        }
+        .poaster2{
+          width:100%;
+          top: 70%;
+          left: 20%;
+        }
     .about_poaster h4{
         font-size:6vw
     }
@@ -360,42 +382,48 @@ table{
        padding:0;
        box-sizing: border-box;
     }
-
-
-
-
-    .poaster1{  
+    /* .poaster1{  
       right:50px;
     }
     .poaster2{  
       left:50px;
     }
-    .yellow1{
-      width: 35%;
-    }
-      .yellow2{
-      width: 25%;
-    }
-      .yellow3{
-      width: 70%;
-    }
-      .yellow4{
-      width: 15%;
-    }
+  */
+
+
 
     .black_line {
         width: 100%;
     }
-  
+    .black_line>span{
+      padding:10px 15px;
+      font-size:16px;
+    }
+    .black_line i{
+      line-height:50px;
+      font-size:16px;
+    }
     .front{
-        margin:150px 0 200px;
+        margin:50px 0 100px;
         flex-wrap:wrap;
+
       }
       .front>div{
-         width:100%;
+        height:250px;
+        width:100%;
+      }
+      .my_info{
+        font-size:16px;
+        text-align: center;
+        padding: 30px 0 0 0;
       }
       .name{
-        font-size:2.6vw;
+        font-size:16px;
+      }
+
+      .tool img, .skill img {
+        width: auto;
+        height: 30px;
     }
     .edu_table, .cer_table{
       width:calc(100% - 30px);
@@ -406,9 +434,28 @@ table{
       /* .edu_table td:first-child {
         width: auto;
     } */
-
-
-
+    .sub_title{
+      font-size:20px;
+    }
+    .yellow1{
+      left:20%;
+      animation:yellow1_2 1s;
+      animation-fill-mode: both;
+      animation-delay:0.4s;
+      width:32%;
+    }
+    @keyframes yellow1_2{
+    from {top: -30%}
+    to {top: 73px}
+    }
+    .yellow2{
+      left:7%;
+      width:25%;
+    }
+    .yellow3{
+      width: 22%;
+      top:45%;
+    }
   
   }
 
