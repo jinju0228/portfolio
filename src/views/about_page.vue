@@ -17,7 +17,7 @@
         <article class="art1">
             <div class="black_line"><span>Frontend Developer</span></div>
             <div class="front">
-                <div class="my_img"><img src="img/my_img.jpeg"></div>
+                <div class="my_img"><img src="img/my_img2.jpeg"></div>
                 <div>
                   <ul class="my_info">
                     <li class="name">박진주</li>
