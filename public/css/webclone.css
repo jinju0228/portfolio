@@ -46,7 +46,7 @@
   top: 215vh;
   width:7%;
   right:7%;
-  animation: bounce 1s infinite ease-in-out;
+  animation: tong3 1s infinite ease-in-out;
 }
 @keyframes tong3 {
   0% {
