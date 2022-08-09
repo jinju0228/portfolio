@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "bootstrap": "^5.2.0",
+    "build": "^0.1.4",
     "core-js": "^3.8.3",
     "firebase": "^9.9.2",
     "popper.js": "^1.16.1",
