@@ -2,7 +2,6 @@
     width:100%;
     position:relative;
     background-color: #AE888D;
-    /* animation: fadein 2s; */
 }
 .fixed{
     position:fixed;
@@ -104,7 +103,6 @@
     background-color:#f0f0f0;
     flex-wrap: wrap;
     border-radius:5px;
-    /* display:none; */
 }
 
 .mock_popup>div{

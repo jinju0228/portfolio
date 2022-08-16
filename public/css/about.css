@@ -2,7 +2,6 @@
   .about_back{
     width:100%;
     background-color: #E3E3D1;
-    /* animation: fadein 2s; */
   }
   .fadein{
     animation: fadein 2s;
@@ -32,7 +31,6 @@
 from {top: -30%}
 to {top: 0}
 }
-
 .yellow2{
   width:20%;
   left: 10%;
@@ -49,8 +47,6 @@ to {top: 0}
   from {bottom: -20%}
   to {bottom: 10%}
 }
-
-
 .yellow3{
   width:15%;
   right:-10%;
@@ -67,8 +63,6 @@ to {top: 0}
   from {right: -10%;}
   to {right: 25%}
 }
-
-
 .yellow4{
   width:90%;
   left:55%;
@@ -153,7 +147,6 @@ to {top: 0}
     .my_img{
       width:100%;
       height:100%;
-      /* background-color:#fff; */
     }
     .my_img>img{
       height:100%;
@@ -321,13 +314,6 @@ table{
     .about_poaster>h4{
            font-size:4.5vw
     }
-    /* .poaster1{  
-      top:220px;
-      right:210px;
-    }
-    .poaster2{
-      top: 500px;
-      left: 200px;} */
       .black_line {
         width: 80%;
     }
@@ -336,31 +322,6 @@ table{
   
   
   }
-    /* }
-    .yellow1{
-      width: 40%;
-    }
-      .yellow2{
-      width: 30%;
-      left: 10%;
-      top: 384px;
-    }
-      .yellow3{
-      width: 75%;
-      right: 0;
-      top: 593px;
-    }
-      .yellow4{
-      width: 5%;
-      left: 40%;
-      top: 384px;
-    } */
-
-
-
-
-
-
 
 
         @media only screen and (max-width: 1000px) {
@@ -382,16 +343,6 @@ table{
        padding:0;
        box-sizing: border-box;
     }
-    /* .poaster1{  
-      right:50px;
-    }
-    .poaster2{  
-      left:50px;
-    }
-  */
-
-
-
     .black_line {
         width: 100%;
     }
@@ -431,9 +382,6 @@ table{
     .edu_table td:last-child{
         display:none;
       }
-      /* .edu_table td:first-child {
-        width: auto;
-    } */
     .sub_title{
       font-size:20px;
     }

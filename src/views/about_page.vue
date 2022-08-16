@@ -89,7 +89,7 @@ export default {
   name: 'about-page',
   data:function() {
 return {
-   myinfo:['1996.02.28 Yangpyeong','010-8758-9982','jin_ju28@daum.net','성신여자대학교, 청정융합과학과'],
+   myinfo:['1996.02.28 Yangpyeong','010-8758-9982','jinjuuu02@gmail.com','성신여자대학교, 청정융합과학과'],
   education:[{date:'2022.02.22 ~ 08.16',subject:'[디지털컨버전스] 스마트_뷰(Vue)활용프론트엔드 웹개발자 양성과정', place:'노원 그린 컴퓨터',complete:'수료 예정'},{date:'2021.12.02 ~ 12.30',subject:'[시각디자인] 출판편집(포토샵, 일러스트)',place:'종로 그린 컴퓨터',complete:'수료'}],
   certificate:[{date:'2020.07',cerName:'컴퓨터활용능력 1급'},{date:'2022.01',cerName:'GTQ 1급'}],
   tool:[{toolUrl: "../img/1.png"},{toolUrl: "../img/2.png"},{toolUrl: "../img/3.png"},{toolUrl: "../img/4.png"},{toolUrl: "../img/5.png"},{toolUrl: "../img/6.png"},{toolUrl: "../img/7.png"},{toolUrl: "../img/8.png"},{toolUrl: "../img/9.png"},{toolUrl: "../img/firebase.png"},{toolUrl: "../img/10.png"}],  
@@ -105,35 +105,6 @@ return {
   goTop: function(){
     window.scrollTo({ top: 0, behavior: 'smooth' })
   },
-  // scrollEvent : function(){
-  //     var animation = function () {
-  //   var items, winH;
-  //   var initModule = function () {
-  //     items = document.querySelectorAll(".Art");
-  //     winH = window.innerHeight;
-  //     _addEventHandlers();
-  //   }
-  //   var _addEventHandlers = function () {
-  //     window.addEventListener("scroll", _checkPosition);
-  //     window.addEventListener("load", _checkPosition);
-  //     window.addEventListener("resize", initModule);
-  //   };
-  //  var _checkPosition = function flip(){
-  //    for(let i = 0; i < items.length; i++){
-  //      var artTop = items[i].getBoundingClientRect().top;
-  //      if (winH > artTop) {
-  //       items[i].classList.add('fadein')
-
-  //     }
-  //   }
-  //      }
-  
-  //  return {
-  //    init4: initModule
-  //  }
-  // }
-  // animation().init4();
-  // }
 
 }
 

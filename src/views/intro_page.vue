@@ -17,7 +17,7 @@
       </div>
       <div class="ifoot2">
         <span>E</span>
-        <b>jin_ju28@daum.net</b>
+        <b>jinjuuu02@gmail.com</b>
       </div>
     </div>
   </div>

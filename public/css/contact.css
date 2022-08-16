@@ -2,7 +2,6 @@
     position:relative;
     width:100%;
     background-color: #0F4CE9;
-    /* animation: fadein 2s; */
 }
 .contact_main{
     position:relative;
@@ -11,7 +10,6 @@
 }
 .wave_wrap{
     width:100%;
-    /* position:absolute; */
     display:flex;
     right:0;
     justify-content: flex-end;
@@ -19,7 +17,6 @@
 .wave1{
     width:20%;
     position:absolute;
-    /* right:30%; */
     animation:wave1 1s;
     animation-fill-mode: both;
 }
@@ -56,7 +53,6 @@
 .wave2{
     width:30%;
     position:absolute;
-    /* right:0%; */
     animation:wave2 1s;
     animation-fill-mode: both;
     animation-delay: 0.1s;
@@ -231,10 +227,6 @@
         line-height:3;
         color:#fff;
     }
-    /* .cpoaster>p{
-        font-size:8vw;
-        line-height:3;
-    } */
     .cpoaster_wrap>p {
         font-size: 6.5vw;
     }
@@ -245,7 +237,6 @@
     padding: 100px 0 0 0;
 }
 .pro_poaster2 {
-    /* padding-left: 100px; */
     padding-left:5%;
 
 

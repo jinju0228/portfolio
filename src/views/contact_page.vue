@@ -37,7 +37,7 @@
                     </div>
                     <div>
                         <sapn class="lte_title">EㅡMail</sapn>
-                        <b><a href='mailto:jin_ju28@daum.net'>jin_ju28@daum.net</a></b>
+                        <b><a href='mailto:jinjuuu02@gmail.com'>jinjuuu02@gmail.com</a></b>
                     </div>
                     <div>                        
                         <sapn class="lte_title">Git-Hub</sapn>
