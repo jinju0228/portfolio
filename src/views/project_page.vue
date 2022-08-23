@@ -99,7 +99,7 @@ export default {
   data:function() {
 return {
  one:[{titleE:'NIGHTSEOMUN ',titleK:'서문시장야시장',company:'대구에 위치한 총거리 350M에 달하는 대형 야시장', projectUrl:"../img/seomun.png",type:'Personal project',role:'All',skill:['HTML','CSS','VsCode', 'Mysql','Node.js','Heroku','Github'],check:['Video','DB(GET/POST)','Kakao Login API','Resposive'],heroku:"https://nightmarketseomun.herokuapp.com/",github:'https://github.com/jinju0228/nmarket.git',overview:'설계부터 구현까지 혼자 해본 첫 번째 프로젝트. 마음에 쏙 드는 결과물은 아니지만 6개월 얼마나 성장했는지 보여줄 수 있는 프로젝트라고 생각한다. ',mockupUrl:'../img/SEOMUN_MOCKUP.png'},
- {titleE:'HEYNATURE',titleK:'헤이네이처',company:'자연주의 화장품 브랜드',projectUrl:'../img/heynature.png',type:'Team Project',role:'Main page + α(supplementation)', skill:['HTML','CSS','JavaScript','JQuery','VsCode', 'Mysql','Node.js','Heroku','Github'],check:['Fullpage.js','DB(GET/POST)','Animation','Swiper slide','Responsive'], heroku:'https://heynature.herokuapp.com/', github:'https://github.com/jinju0228/heynature_update_ver.git',overview:'소통의 중요성을 느낄 수 있었던 팀 프로젝트. 한달 반 동안 우여곡절이 많았지만 그만큼 배운게 많았다. ', mockupUrl:'../img/heynature_mockup.jpg'}
+ {titleE:'HEYNATURE',titleK:'헤이네이처',company:'자연주의 화장품 브랜드',projectUrl:'../img/heynature.png',type:'Team Project',role:'Main page + α(supplementation)', skill:['HTML','CSS','JavaScript','JQuery','VsCode', 'Mysql','Node.js','Heroku','Github'],check:['Scrollify','DB(GET/POST)','Animation','Swiper slide','Responsive'], heroku:'https://heynature.herokuapp.com/', github:'https://github.com/jinju0228/heynature_update_ver.git',overview:'소통의 중요성을 느낄 수 있었던 팀 프로젝트. 한달 반 동안 우여곡절이 많았지만 그만큼 배운게 많았다. ', mockupUrl:'../img/heynature_mockup.jpg'}
   ],
   is_show: false
         }
