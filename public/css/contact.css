@@ -204,6 +204,41 @@
   .contact_bottom a{
     color:#fff;
   }
+  .scroll_white>p{
+    font-weight:bold;
+    color:#fff;
+    font-size:12px;
+  }
+  .scroll_white>a {
+    display:block;
+    padding-top: 55px;
+  
+  }
+  .scroll_white>a>span {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 30px;
+    height: 45px;
+    margin-left: -15px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    box-sizing: border-box;
+  }
+  .scroll_white>a>span::before {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    content: '';
+    width: 6px;
+    height: 6px;
+    margin-left: -3px;
+    background-color: #fff;
+    border-radius: 100%;
+    -webkit-animation: sdb 2s infinite;
+    animation: sdb 2s infinite;
+    box-sizing: border-box;
+  }
 
 
 
