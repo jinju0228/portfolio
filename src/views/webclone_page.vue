@@ -79,6 +79,10 @@
         </div>  
     </section>
  </div>
+   <div id="scroll_path" class="scroll_path scroll_black">
+    <a><span></span></a>
+    <p>SCROLL</p>
+  </div>  
 </template>
 <script>
 export default {
