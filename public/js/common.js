@@ -54,57 +54,12 @@ mmenu.onclick = function(){
       x.style.display = "block";
     }
 }
-}
-
-    // var mockBtn = document.querySelectorAll(".mock_button");
-    // var mmockBtn = document.querySelectorAll(".mmock_button");
-    // var mockClose = document.querySelectorAll(".X");
-    // for(let i = 0; i < mockBtn.length ; i++){
-    //     mockBtn[i].addEventListener("click", function(){
-    //     document.querySelectorAll(".mock_popup")[i].style.display="block";
-    // })
-    //     mockClose[i].addEventListener("click", function(){
-    //     document.querySelectorAll(".mock_popup")[i].style.display="none";
-    // })
-    // }
-    // for(let i = 0; i < mmockBtn.length ; i++){
-    // mmockBtn[i].addEventListener("click", function(){
-    // document.querySelectorAll(".mock_popup")[i].style.display="block";
-    // })
-    // mockClose[i].addEventListener("click", function(){
-    // document.querySelectorAll(".mock_popup")[i].style.display="none";
-    // })
-    
-    // }
-/*var animation = function () {
-    var items, winH;
-    var initModule = function () {
-      items = document.querySelectorAll(".Art");
-      winH = window.innerHeight;
-      _addEventHandlers();
-    }
-    var _addEventHandlers = function () {
-      window.addEventListener("scroll", _checkPosition);
-      window.addEventListener("load", _checkPosition);
-      window.addEventListener("resize", initModule);
-    };
-   var _checkPosition = function flip(){
-     for(let i = 0; i < items.length; i++){
-       var artTop = items[i].getBoundingClientRect().top;
-       if (winH > artTop) {
-        items[i].classList.add('fadein')
-
-      }
-    }
-       }
-   return {
-     init4: initModule
-   }
+    window.addEventListener('scroll',
+  function scrollE (){
+    document.getElementById('scroll_path').classList.add('disNone')
   }
-  animation().init4();
+);
 }
-*/
-
 
 
 
